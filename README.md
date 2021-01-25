@@ -15,3 +15,30 @@ To use the Apache Commons Virtual File System Spring Boot Starter in your projec
   <type>pom</type>
 </dependency>
 ```
+
+## Usage
+
+First add the configuration in your application.yml. There is a lot of parameters, you can check the file SftpFileSystemProperties and the doc of vfs2 (https://commons.apache.org/proper/commons-vfs/api.html) if you need something particular.
+
+```yaml
+commons-vfs2:
+    sftp:
+        preferredAuthentications: password
+```
+
+In your code, you autowire FileSystemManager and the options FileSystemOptions
+
+```java
+@Autowired
+private FileSystemManager manager;
+
+@Autowired
+private FileSystemOptions options;
+```
+
+And you can then connect to the sftp with the manager. 
+`ftpURI` is the url to your ftp, ie sftp://username:password@domain.com/path/to/file
+
+```java
+FileObject remote = manager.resolveFile(ftpURI, options);
+```
