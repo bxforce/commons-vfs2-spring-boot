@@ -9,10 +9,9 @@ To use the Apache Commons Virtual File System Spring Boot Starter in your projec
 
 ```xml
 <dependency>
-  <groupId>com.github.bxforce</groupId>
-  <artifactId>commons-vfs2-spring-boot</artifactId>
-  <version>1.0.0-RELEASE</version>
-  <type>pom</type>
+    <groupId>com.github.bxforce</groupId>
+    <artifactId>commons-vfs2-spring-boot-starter</artifactId>
+    <version>1.0.1-RELEASE</version>
 </dependency>
 ```
 
