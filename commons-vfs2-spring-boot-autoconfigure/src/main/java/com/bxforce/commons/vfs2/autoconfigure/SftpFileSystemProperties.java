@@ -13,6 +13,7 @@ public class SftpFileSystemProperties {
     private Integer sessionTimeoutMillis;
     private String strictHostKeyChecking;
     private Boolean userDirIsRoot;
+    private Boolean disableDetectExecChannel;
 
     public String getPreferredAuthentications() {
         return preferredAuthentications;
@@ -92,5 +93,13 @@ public class SftpFileSystemProperties {
 
     public void setUserDirIsRoot(Boolean userDirIsRoot) {
         this.userDirIsRoot = userDirIsRoot;
+    }
+
+    public Boolean getDisableDetectExecChannel() {
+        return disableDetectExecChannel;
+    }
+
+    public void setDisableDetectExecChannel(Boolean disableDetectExecChannel) {
+        this.disableDetectExecChannel = disableDetectExecChannel;
     }
 }

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.bxforce</groupId>
     <artifactId>commons-vfs2-spring-boot</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>commons-vfs2-spring-boot</name>
@@ -64,7 +64,7 @@
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
         <maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
-        <commons-vfs2.version>2.6.0</commons-vfs2.version>
+        <commons-vfs2.version>2.7.0</commons-vfs2.version>
         <jsch.version>0.1.55</jsch.version>
     </properties>
 

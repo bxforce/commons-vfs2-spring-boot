@@ -70,6 +70,10 @@ public class VFSAutoConfiguration {
             if (null != sftpProperties.getUserDirIsRoot()) {
                 builder.setUserDirIsRoot(options, sftpProperties.getUserDirIsRoot());
             }
+
+            if (null != sftpProperties.getDisableDetectExecChannel()) {
+                builder.setDisableDetectExecChannel(options, sftpProperties.getDisableDetectExecChannel());
+            }
         }
 
         return options;
